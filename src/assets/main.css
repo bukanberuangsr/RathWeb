@@ -1,10 +1,28 @@
 @import './base.css';
+:root {
+  --main-color: #D93D66;
+  --secondary-color: #732F54;
+  --tertiary-color: #FFC107;
+  --accent-green: #41BF91;
+  --accent-dark-blue: #313759;
+  --accent-darker-blue: #0d1117;
+  --accent-light-blue: #007bff;
+  --accent-cream: #D9C8A9;
+  --white: #FFFFFF;
+  --black: #000000;
+  
+  --font-family: 'JetBrains Mono', monospace;
+}
+
+body {
+  background-color: var(--accent-darker-blue);
+  color: var(--white);
+}
 
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  max-width: 100%;
   font-weight: normal;
+  font-family: var(--font-family);
 }
 
 a,
@@ -18,18 +36,5 @@ a,
 @media (hover: hover) {
   a:hover {
     background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
-
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
   }
 }
