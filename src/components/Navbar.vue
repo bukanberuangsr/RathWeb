@@ -2,25 +2,40 @@
 
 <template>
   <div class="topnav">
-    <!-- <div class="logo">
-      <img src="/src/assets/logo.svg" alt="Logo" width="100px">
-    </div> -->
+    <div class="logo">
+      <img src="/images/logo-1.png" />
+      <h1>RathWeb</h1>
+    </div>
     <div class="link-container">
-      <a href="/home">Home</a>
-      <a href="/about">About</a>
-      <a href="/projects">Projects</a>
+      <router-link to="/">Home</router-link>
+      <router-link to="/projects">Projects</router-link>
+      <router-link to="/about">About</router-link>
     </div>
   </div>
 </template>
 
 <style scoped>
 .topnav {
-  margin-top: 20px;
   margin-bottom: 20px;
   background-color: var(--main-color);
   overflow: hidden;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 50px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  h1 {
+    font-weight: 700;
+  }
+  img {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .link-container {

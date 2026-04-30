@@ -1,22 +1,51 @@
 @import './base.css';
 :root {
-  --main-color: #D93D66;
-  --secondary-color: #732F54;
-  --tertiary-color: #FFC107;
-  --accent-green: #41BF91;
+  --main-color: #d93d66;
+  --secondary-color: #732f54;
+  --tertiary-color: #ffc107;
+  --accent-green: #41bf91;
   --accent-dark-blue: #313759;
   --accent-darker-blue: #0d1117;
   --accent-light-blue: #007bff;
-  --accent-cream: #D9C8A9;
-  --white: #FFFFFF;
+  --accent-cream: #d9c8a9;
+  --white: #ffffff;
   --black: #000000;
-  
-  --font-family: 'JetBrains Mono', monospace;
+}
+
+/* NORMAL */
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('@/assets/fonts/space-grotesk-latin-400-normal.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('@/assets/fonts/space-grotesk-latin-500-normal.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('@/assets/fonts/space-grotesk-latin-700-normal.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+}
+
+/* EXTENDED (HEADLINE ONLY) */
+@font-face {
+  font-family: 'Space Grotesk Ext';
+  src: url('@/assets/fonts/space-grotesk-latin-ext-700-normal.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
 }
 
 body {
   background-color: var(--accent-darker-blue);
   color: var(--white);
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 #app {
@@ -37,4 +66,11 @@ a,
   a:hover {
     background-color: hsla(160, 100%, 37%, 0.2);
   }
+}
+
+/* Pengaturan spesifik untuk tiap Div */
+
+.about .project {
+  margin: 20px 0;
+  padding: 30px 20px;
 }
