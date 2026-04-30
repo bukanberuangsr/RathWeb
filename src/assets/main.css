@@ -1,10 +1,57 @@
 @import './base.css';
+:root {
+  --main-color: #d93d66;
+  --secondary-color: #732f54;
+  --tertiary-color: #ffc107;
+  --accent-green: #41bf91;
+  --accent-dark-blue: #313759;
+  --accent-darker-blue: #0d1117;
+  --accent-light-blue: #007bff;
+  --accent-cream: #d9c8a9;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+/* NORMAL */
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('@/assets/fonts/space-grotesk-latin-400-normal.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('@/assets/fonts/space-grotesk-latin-500-normal.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('@/assets/fonts/space-grotesk-latin-700-normal.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+}
+
+/* EXTENDED (HEADLINE ONLY) */
+@font-face {
+  font-family: 'Space Grotesk Ext';
+  src: url('@/assets/fonts/space-grotesk-latin-ext-700-normal.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+}
+
+body {
+  background-color: var(--accent-darker-blue);
+  color: var(--white);
+  font-family: 'Space Grotesk', sans-serif;
+}
 
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  max-width: 100%;
   font-weight: normal;
+  font-family: var(--font-family);
 }
 
 a,
@@ -21,15 +68,9 @@ a,
   }
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+/* Pengaturan spesifik untuk tiap Div */
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+.about .project {
+  margin: 20px 0;
+  padding: 30px 20px;
 }
