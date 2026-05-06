@@ -22,8 +22,8 @@
 
 @font-face {
   font-family: 'Space Grotesk';
-  src: url('@/assets/fonts/space-grotesk-latin-500-normal.woff2') format('woff2');
-  font-weight: 500;
+  src: url('@/assets/fonts/space-grotesk-latin-600-normal.woff2') format('woff2');
+  font-weight: 600;
   font-display: swap;
 }
 
