@@ -4,7 +4,7 @@
   <div class="topnav">
     <div class="logo">
       <img src="/images/logo-1.png" />
-      <h1>RathWeb</h1>
+      <span>RathWeb</span>
     </div>
     <div class="link-container">
       <router-link to="/">Home</router-link>
@@ -29,12 +29,14 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  h1 {
+  span {
+    font-size: 1.5em;
     font-weight: 700;
   }
   img {
     width: 30px;
     height: 30px;
+    border-radius: 100%;
   }
 }
 

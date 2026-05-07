@@ -31,11 +31,10 @@ onUnmounted(() => {
       </h1>
       <p>
         I am an Information Technology student at Universitas Brawijaya who is passionate about Web
-        Development, Mobile Development, and UI/UX Design. <br />
-        You can contact me using this button below:
+        Development, Mobile Development, and UI/UX Design.
       </p>
       <div class="links">
-        <a href="https://instagram.com/bukanberuangsr">Instagram</a>
+        <a href="https://linkedin.com/in/akhtar-hafiz-p-303949289">LinkedIn</a>
         <a href="https://github.com/bukanberuangsr">Github</a>
       </div>
     </section>
@@ -58,11 +57,13 @@ onUnmounted(() => {
   height: 350px;
   width: auto;
   border: 5px solid var(--main-color);
-  transition: border 0.5s ease-in-out;
+  box-shadow: 0 0 16px var(--main-color);
+  transition: border 0.5s ease-in-out box-shadow 0.2s ease-in-out;
 }
 
 .image img:hover {
   border: 5px solid var(--tertiary-color);
+  box-shadow: 0 0 16px var(--tertiary-color);
 }
 
 .about {
@@ -82,6 +83,7 @@ onUnmounted(() => {
 
   p {
     font-weight: 400;
+    font-size: 1rem;
     text-align: justify;
     margin-bottom: 10px;
   }
@@ -113,20 +115,27 @@ onUnmounted(() => {
   display: flex;
   flex-direction: row;
   gap: 10px;
+  width: 100%;
 }
 
 .links a {
+  flex: 1;
   padding: 10px;
   background-color: var(--accent-dark-blue);
   color: var(--white);
+  text-align: center;
   transition:
     color 0.2s ease-in-out,
-    background-color 0.2s ease-in-out;
+    background-color 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out,
+    transform 0.2s ease-in-out;
 }
 
 .links a:hover {
   background-color: var(--accent-light-blue);
   color: var(--accent-darker-blue);
+  box-shadow: 0 0 16px var(--accent-light-blue);
+  transform: translateY(-2px);
 }
 
 @media (max-width: 786px) {
