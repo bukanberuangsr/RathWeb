@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 
 import Home from '../pages/Home.vue'
 import MyProjects from '../pages/MyProjects.vue'
@@ -11,7 +11,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHashHistory(), // pakai # (cocok untuk static hosting)
+  history: createWebHistory(),
   routes,
 })
 
