@@ -1,13 +1,13 @@
 @import './base.css';
+@import "tailwindcss";
 :root {
-  --main-color: #d93d66;
-  --secondary-color: #732f54;
-  --tertiary-color: #ffc107;
-  --accent-green: #41bf91;
+  --main-color: #483AA0;
+  /* --secondary-color: #732f54; */
+  --secondary-color: #0E2148;
+  --tertiary-color: #7965C1;
   --accent-dark-blue: #0d47a1;
-  --accent-darker-blue: #0d1117;
+  --bg: #0d1117;
   --accent-light-blue: #007bff;
-  --accent-cream: #d9c8a9;
   --white: #ffffff;
   --black: #000000;
 }
@@ -43,18 +43,16 @@
 }
 
 body {
-  background-color: var(--accent-darker-blue);
+  background-color: var(--bg);
   color: var(--white);
   font-family: 'Space Grotesk', sans-serif;
 }
 
 #app {
   max-width: 100%;
-  font-weight: normal;
-  font-family: var(--font-family);
 }
 
-a,
+/* a,
 .blue {
   text-decoration: none;
   color: var(--accent-light-blue);
@@ -67,7 +65,7 @@ a,
     background-color: var(--accent-dark-blue);
     color: var(--white);
   }
-}
+} */
 
 /* Pengaturan spesifik untuk tiap Div */
 
