@@ -1,67 +1,29 @@
 <script setup></script>
 
 <template>
-  <div class="topnav">
-    <div class="logo">
-      <img src="/images/logo-1.png" />
-      <span>RathWeb</span>
+  <div class="bg-(--main-color) text-white overflow-hidden flex flex-row justify-around gap-12.5">
+    <div class="flex items-center gap-2.5">
+      <img src="/images/logo-1.png" class="w-7.5 h-7.5 rounded-full" />
+      <span class="font-bold text-2xl">RathWeb</span>
     </div>
-    <div class="link-container">
-      <router-link to="/">Home</router-link>
-      <router-link to="/projects">Projects</router-link>
-      <router-link to="/about">About</router-link>
+    <div class="flex justify-evenly">
+      <router-link
+        to="/"
+        class="text-gray-200 text-center py-3.5 px-4 text-[17px] hover:bg-gray-200 hover:text-black [&.router-link-active]:bg-white [&.router-link-active]:text-black"
+        >Home</router-link
+      >
+      <router-link
+        to="/projects"
+        class="text-gray-200 text-center py-3.5 px-4 text-[17px] hover:bg-gray-200 hover:text-black [&.router-link-active]:bg-white [&.router-link-active]:text-black"
+        >Projects</router-link
+      >
+      <router-link
+        to="/about"
+        class="text-gray-200 text-center py-3.5 px-4 text-[17px] hover:bg-gray-200 hover:text-black [&.router-link-active]:bg-white [&.router-link-active]:text-black"
+        >About</router-link
+      >
     </div>
   </div>
 </template>
 
-<style scoped>
-.topnav {
-  margin-bottom: 20px;
-  background-color: var(--main-color);
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  gap: 50px;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  span {
-    font-size: 1.5em;
-    font-weight: 700;
-  }
-  img {
-    width: 30px;
-    height: 30px;
-    border-radius: 100%;
-  }
-}
-
-.link-container {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  justify-content: space-evenly;
-}
-
-.link-container a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.link-container a.active {
-  background-color: #04aa6d;
-  color: white;
-}
-</style>
+<style scoped></style>

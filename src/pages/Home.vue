@@ -17,78 +17,45 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="content">
+  <div
+    class="min-h-[calc(100vh-80px)] flex flex-row items-center justify-center mx-auto px-15 gap-12.5 max-[786px]:flex-col max-[786px]:px-6 max-[786px]:gap-6 max-[786px]:text-center"
+  >
     <section class="image">
-      <img src="/images/pfp.jpg" alt="" />
+      <img
+        src="/images/pfp.jpg"
+        alt="Akhtar"
+        class="h-87.5 w-auto border-5 border-(--main-color) shadow-[0_0_16px_var(--main-color)] hover:border-(--tertiary-color) hover:shadow-[0_0_16px_var(--tertiary-color)]"
+      />
     </section>
-    <section class="about">
-      <h1 id="greeting">
+    <section class="max-w-130">
+      <h1 id="greeting" class="font-bold text-3xl mb-2.5">
         <Transition name="greeting" mode="out-in">
-          <span :key="greeting"> {{ greeting }} </span>
+          <span :key="greeting" class="inline-block text-[3em]"> {{ greeting }} </span>
         </Transition>
         <br />
-        My name is Akhtar
       </h1>
-      <p>
+      <h2 class="font-bold text-3xl my-5.5">My name is Akhtar</h2>
+      <p class="font-normal text-base text-justify mb-5">
         I am an Information Technology student at Universitas Brawijaya who is passionate about Web
         Development, Mobile Development, and UI/UX Design.
       </p>
-      <div class="links">
-        <a href="https://linkedin.com/in/akhtar-hafiz-p-303949289">LinkedIn</a>
-        <a href="https://github.com/bukanberuangsr">Github</a>
+      <div class="my-2.5 flex flex-row gap-2.5 w-full">
+        <a
+          href="https://linkedin.com/in/akhtar-hafiz-p-303949289"
+          class="flex-1 p-2.5 bg-blue-700 text-white text-center transition-[color,background-color,box-shadow,transform] duration-200 ease-in-out hover:bg-blue-500 hover:text-slate-800 hover:shadow-[0_0_16px_var(--accent-light-blue)] hover:-translate-y-0.5"
+          >LinkedIn</a
+        >
+        <a
+          href="https://github.com/bukanberuangsr"
+          class="flex-1 p-2.5 bg-blue-700 text-white text-center transition-[color,background-color,box-shadow,transform] duration-200 ease-in-out hover:bg-blue-500 hover:text-slate-800 hover:shadow-[0_0_16px_var(--accent-light-blue)] hover:-translate-y-0.5"
+          >Github</a
+        >
       </div>
     </section>
   </div>
 </template>
 
 <style scoped>
-.content {
-  min-height: calc(100vh - 80px);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  padding: 0 60px;
-  gap: 50px;
-}
-
-.image img {
-  height: 350px;
-  width: auto;
-  border: 5px solid var(--main-color);
-  box-shadow: 0 0 16px var(--main-color);
-  transition: border 0.5s ease-in-out box-shadow 0.2s ease-in-out;
-}
-
-.image img:hover {
-  border: 5px solid var(--tertiary-color);
-  box-shadow: 0 0 16px var(--tertiary-color);
-}
-
-.about {
-  max-width: 520px;
-  h1 {
-    margin-bottom: 10px;
-  }
-
-  h1,
-  span {
-    font-weight: 700;
-  }
-
-  span {
-    font-size: 3em;
-  }
-
-  p {
-    font-weight: 400;
-    font-size: 1rem;
-    text-align: justify;
-    margin-bottom: 10px;
-  }
-}
-
 .greeting-enter-active,
 .greeting-leave-active {
   transition:
@@ -104,49 +71,5 @@ onUnmounted(() => {
 .greeting-leave-to {
   opacity: 0;
   transform: translateY(-8px);
-}
-
-#greeting span {
-  display: inline-block;
-}
-
-.links {
-  margin: 10px 0;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  width: 100%;
-}
-
-.links a {
-  flex: 1;
-  padding: 10px;
-  background-color: var(--accent-dark-blue);
-  color: var(--white);
-  text-align: center;
-  transition:
-    color 0.2s ease-in-out,
-    background-color 0.2s ease-in-out,
-    box-shadow 0.2s ease-in-out,
-    transform 0.2s ease-in-out;
-}
-
-.links a:hover {
-  background-color: var(--accent-light-blue);
-  color: var(--accent-darker-blue);
-  box-shadow: 0 0 16px var(--accent-light-blue);
-  transform: translateY(-2px);
-}
-
-@media (max-width: 786px) {
-  .content {
-    flex-direction: column;
-    padding: 0 24px;
-    gap: 24px;
-    text-align: center;
-  }
-  .about p {
-    text-align: justify;
-  }
 }
 </style>
