@@ -50,6 +50,11 @@ onUnmounted(() => {
           class="flex-1 p-2.5 bg-(--main-color) text-white text-center transition-[color,background-color,box-shadow,transform] duration-200 ease-in-out hover:bg-(--tertiary-color) hover:shadow-[0_0_20px_var(--main-color)] hover:-translate-y-0.5"
           >Github</a
         >
+        <a
+          href="https://rathmakes.itch.io/"
+          class="flex-1 p-2.5 bg-(--main-color) text-white text-center transition-[color,background-color,box-shadow,transform] duration-200 ease-in-out hover:bg-(--tertiary-color) hover:shadow-[0_0_20px_var(--main-color)] hover:-translate-y-0.5"
+          >Itch.io</a
+        >
       </div>
     </section>
   </div>
