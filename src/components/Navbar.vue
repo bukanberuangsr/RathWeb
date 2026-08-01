@@ -17,11 +17,11 @@
         class="text-gray-200 text-center py-3.5 px-4 text-[17px] hover:bg-gray-200 hover:text-black [&.router-link-active]:bg-white [&.router-link-active]:text-black"
         >Projects</router-link
       >
-      <router-link
+      <!-- <router-link
         to="/about"
         class="text-gray-200 text-center py-3.5 px-4 text-[17px] hover:bg-gray-200 hover:text-black [&.router-link-active]:bg-white [&.router-link-active]:text-black"
         >About</router-link
-      >
+      > -->
     </div>
   </div>
 </template>
