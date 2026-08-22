@@ -24,7 +24,7 @@ onUnmounted(() => {
       <img
         src="/images/pfp.jpg"
         alt="Akhtar"
-        class="h-87.5 w-auto border-5 border-(--main-color) shadow-[0_0_16px_var(--main-color)] hover:border-(--tertiary-color) hover:shadow-[0_0_16px_var(--tertiary-color)]"
+        class="h-87.5 w-auto border-5 border-(--main-color) shadow-[0_0_16px_var(--main-color)] hover:border-(--secondary-color) hover:shadow-[0_0_16px_var(--secondary-color)] hover:ease-in-out"
       />
     </section>
     <section class="max-w-130">
@@ -42,17 +42,17 @@ onUnmounted(() => {
       <div class="my-2.5 flex flex-row gap-2.5 w-full">
         <a
           href="https://linkedin.com/in/akhtar-hafiz-p-303949289"
-          class="flex-1 p-2.5 bg-(--main-color) text-white text-center transition-[color,background-color,box-shadow,transform] duration-200 ease-in-out hover:bg-(--tertiary-color) hover:shadow-[0_0_20px_var(--main-color)] hover:-translate-y-0.5"
+          class="flex-1 p-2.5 bg-(--main-color) text-white text-center transition-[color,background-color,box-shadow,transform] duration-200 ease-in-out hover:bg-(--secondary-color) hover:shadow-[0_0_20px_var(--main-color)] hover:-translate-y-0.5"
           >LinkedIn</a
         >
         <a
           href="https://github.com/bukanberuangsr"
-          class="flex-1 p-2.5 bg-(--main-color) text-white text-center transition-[color,background-color,box-shadow,transform] duration-200 ease-in-out hover:bg-(--tertiary-color) hover:shadow-[0_0_20px_var(--main-color)] hover:-translate-y-0.5"
+          class="flex-1 p-2.5 bg-(--main-color) text-white text-center transition-[color,background-color,box-shadow,transform] duration-200 ease-in-out hover:bg-(--secondary-color) hover:shadow-[0_0_20px_var(--main-color)] hover:-translate-y-0.5"
           >Github</a
         >
         <a
           href="https://rathmakes.itch.io/"
-          class="flex-1 p-2.5 bg-(--main-color) text-white text-center transition-[color,background-color,box-shadow,transform] duration-200 ease-in-out hover:bg-(--tertiary-color) hover:shadow-[0_0_20px_var(--main-color)] hover:-translate-y-0.5"
+          class="flex-1 p-2.5 bg-(--main-color) text-white text-center transition-[color,background-color,box-shadow,transform] duration-200 ease-in-out hover:bg-(--secondary-color) hover:shadow-[0_0_20px_var(--main-color)] hover:-translate-y-0.5"
           >Itch.io</a
         >
       </div>
